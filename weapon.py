@@ -1,7 +1,8 @@
 
-import random
-weapons_list = ["hammer", "axe", "grenade"]
 class Weapon:
-    def __init__(self):
-        self.name = weapons_list
-        self.attack_power = 100
+    def __init__(self, name, attack_power):
+        self.name = name
+        self.attack_power = attack_power
+
+    
+
