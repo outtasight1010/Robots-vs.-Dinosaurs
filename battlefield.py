@@ -8,25 +8,41 @@ class Battlefield:
         self.dinosaur = Dinosaur("T-Rex20", 50)
         my_robot = Robot("RX714")
         my_dinosaur = Dinosaur("T-Rex20", 50)
+    
+    
+
+    def run_game(self):
+        self.display_welcome()
+        print("")
+        my_dinosaur.attack_dino("RX714")
+        print("")
+        my_robot.attack_robot("T-Rex20")
+        print("")
+        self.battle_phase()
 
 
-    #def run_game(self):
+    
+    
+    
+    def display_welcome(self):
+        print("Welcome to battle! Which side will win this war? Only one way to find out...It's GO-TIME!" )
 
-    def game_greeting():
-        greeting_input = input("Greetings and welcome to battle! Who will win this war? Will it be 1.", my_dinosaur.name "or 2.", my_robot.name"? " )
-        while greeting_input != "1" and greeting_input != "2":
-            print("Oops, but that's NOT a choice. AHA, please choose again!") 
-            greeting_input = input("Greetings and welcome to battle! Who will win this war? Will it be 1. T-Rex20 or 2. RX714? ")
-            
-        else:
-            if greeting_input== "1": 
-                print("Here comes T-Rex20! ROARRRRRRRRRRR!")
-            elif greeting_input == "2":
-                print("BEEP BOP BOOP! The one and only RX714!")
-        return greeting_input
+    def battle_phase(self):
+        print("UH OH, not sure what happened, but", my_dinosaur.name ," and ", my_robot.name," have gone off the rails! They are both going at IT!")
+        print("")
+        print(my_dinosaur.name,"just attacked ",my_robot.name," with his Sledgehammer! WOW, now ",my_robot.name," just did the same thing to ",my_dinosaur.name,"!")
 
+
+
+my_battlefield = Battlefield()
 my_dinosaur = Dinosaur("T-Rex20", 100)
 my_robot = Robot("RX714")
+
+
+
+
+
+
 
     
 
