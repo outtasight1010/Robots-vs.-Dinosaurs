@@ -36,7 +36,13 @@ class Battlefield:
         print(my_dinosaur.name,"just attacked ",my_robot.name," with his Sledgehammer! WOW, now ",my_robot.name," just did the same thing to ",my_dinosaur.name,"!")
 
     def display_winner(self):
-        print("OH BOY, it looks as if theyreally did a number on each other because they are both out of attack power!")
+        print("OH BOY, it looks as if they really did a number on each other because they are both out of attack power!")
+        print("")
+        print("It's a tough call.....but looks like", my_robot.name,"is the ONE left standing!!! That's all folks!")
+
+        
+
+
         
         
         
