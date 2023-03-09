@@ -20,3 +20,7 @@ class Robot:
         
         return user_attack
     
+my_robot = Robot("RX714")
+print(my_robot.name)
+
+    

@@ -3,8 +3,7 @@ class Dinosaur:
         self.name = name
         self.attack_power = attack_power
         self.health = 50
-
-
+        
 
     def attack(self, robot):
         user_attack = input("Would you like to attack RX714? Type 1. for YES or 2. for No. ")
@@ -18,6 +17,11 @@ class Dinosaur:
                 print("Oh no, you have been HIT!. Your health is now 30 and your attack power is 70!")
 
         return user_attack
+
+my_dinosaur = Dinosaur("T-Rex20",100)
+print(my_dinosaur.name)
+print(my_dinosaur.attack_power)
+print(my_dinosaur.health)
     
 
 
